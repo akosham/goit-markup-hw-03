@@ -1,5 +1,4 @@
-
-html{
+html {
   box-sizing: border-box;
   /* position: relative;
   width: 1600px;
@@ -8,23 +7,23 @@ html{
 
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-:root{
+:root {
   --main-title-color: #212121;
   --mail-font: 'Roboto', sans-serif;
-  --main-background: #FFFFFF;
-  --accent-color:#2196F3; 
+  --main-background: #ffffff;
+  --accent-color: #2196f3;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #212121;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -36,11 +35,12 @@ h3,
 h4,
 h5,
 h6,
-p{
+p {
   margin: 0;
 }
 
-ul,ol{
+ul,
+ol {
   margin: 0;
   padding-left: 0;
 }
@@ -53,7 +53,7 @@ ul,ol{
   text-decoration: none;
 }
 
-img{
+img {
   display: block;
 }
 
@@ -70,8 +70,8 @@ img{
   margin: -1px;
 }
 
-.container{
-/* margin-left: auto;
+.container {
+  /* margin-left: auto;
 /* margin-right: auto; */
   width: 1200px;
   padding-left: 15px;
@@ -80,7 +80,7 @@ img{
   margin: 0 auto;
 }
 
-.section{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -93,18 +93,42 @@ img{
   padding-bottom: 25px;
 }
 
-/* .header-list list{} */
-/* .header-item{} */
+.main-header {
+  display: flex;
+  align-items: center;
+}
 
-.header-logo{
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-list .header-item {
+  background-color: tomato;
+}
+
+/* .header-list .header-item + .header-item {
+  margin-left: 50px;
+} */
+
+.header-list .header-item:not(:last-child) {
+  /* margin-right: 50px; */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--accent-color)
+  margin-right: 93px;
+  color: var(--accent-color);
 }
 
-.logo-link{
+.logo-link {
   color: #000000;
 }
 
@@ -112,7 +136,8 @@ img{
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color:var(--main-title-color);
+  text-align: center;
+  color: var(--main-title-color);
 }
 
 .header-link:hover,
@@ -122,8 +147,17 @@ img{
   color: var(--accent-color);
 }
 
-.current{
+.current {
   color: var(--accent-color);
+}
+
+.header-list-contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-list-contact .header-item + .header-item {
+  margin-left: 50px;
 }
 
 .header-link-right {
@@ -131,33 +165,33 @@ img{
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  /* padding-top: 32px;
+  padding-bottom: 32px;
+  display: block; */
 }
 
 /* -------------hero------------- */
 
-.hero{
-  background-color:#2F303A;
-
+.hero {
+  background-color: #2f303a;
 }
 
-.hero-content{
+.hero-content {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.hero-title{
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 30px;
   max-width: 696px;
-  margin:0 auto;
-
-
+  margin: 0 auto;
 }
 
 .hero-btn {
@@ -169,19 +203,21 @@ img{
   color: #ffffff;
   background: var(--accent-color);
   cursor: pointer;
-  max-width: 216px;
+  min-width: 216px;
   width: 216px;
+  height: 50px
+  border-radius: 4px;
   text-align: center;
   align-items: center;
   /* margin: 0 auto; */
   /* display: flex; */
-     /* min-width: 130px;
+  /* min-width: 130px;
     border-radius: 4px; */
 }
 
 .hero-btn:hover,
-.hero-btn:focus{
-  background: #188CE8;
+.hero-btn:focus {
+  background: #188ce8;
 }
 
 /* ----------------second-section------------ */
@@ -198,7 +234,7 @@ img{
   line-height: 1.14;
   font-size: 14px;
   text-transform: uppercase;
-  color:var(--main-title-color);
+  color: var(--main-title-color);
   margin-bottom: 10px;
 }
 .second-section-text {
@@ -229,7 +265,7 @@ img{
 /* --------------------fourth-section------------- */
 
 .fourth-section {
-  background-color:  #F5F4FA;
+  background-color: #f5f4fa;
 }
 .fourth-section-title {
   font-weight: 700;
@@ -240,7 +276,7 @@ img{
   margin-bottom: 50px;
 }
 .fourth-section-list {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 /* .fourth-section-item {
 }
@@ -259,10 +295,9 @@ img{
   line-height: 1.19;
   text-align: center;
   color: #757575;
-
 }
 
-.introducing{
+.introducing {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -270,7 +305,7 @@ img{
 /* --------------footer------------- */
 
 .footer {
-  background-color: #2F303A;
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -286,8 +321,8 @@ img{
   display: block;
 }
 
-.logo-link-footer{
-  color: #FFFFFF;
+.logo-link-footer {
+  color: #ffffff;
 }
 
 /* .footer-address {
@@ -296,15 +331,15 @@ img{
 }
 .footer-item {
 } */
-.footer-link-place{
+.footer-link-place {
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-link-place:hover,
-.footer-link-place:focus{
+.footer-link-place:focus {
   color: var(--accent-color);
 }
 
@@ -319,10 +354,9 @@ img{
 }
 
 .footer-link:hover,
-.footer-link:focus{
+.footer-link:focus {
   color: var(--accent-color);
 }
-
 
 /* -----------------portfolio------------ */
 /* -----------------project------------------ */
@@ -339,21 +373,21 @@ img{
 } */
 
 .filters-btn {
-  font-family: var(--mail-font)
+  font-family: var(--mail-font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color:var(--main-title-color);
-  background: #F5F4FA;
+  color: var(--main-title-color);
+  background: #f5f4fa;
   cursor: pointer;
 }
 
 .filters-btn:hover,
-.filters-btn:focus{
-  color: #FFFFFF;
+.filters-btn:focus {
+  color: #ffffff;
   background-color: var(--accent-color);
 }
 
@@ -362,21 +396,21 @@ img{
 .project-item {
 } */
 
-.icone-text{
+.icone-text {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .project-link {
   color: var(--main-title-color);
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  background: #ffffff;
+  /* border: 1px solid #eeeeee; */
 }
 
 .project-subtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em
+  letter-spacing: 0.06em;
 }
 .project-text {
   font-weight: 400;
