@@ -332,9 +332,10 @@ img{
   color: var(--main-title-color);
 }
 
-/* .filers-list {
+.filers-list {
+  margin-bottom: 50px;
 }
-.filters-item {
+/* .filters-item {
 } */
 
 .filters-btn {
@@ -360,6 +361,11 @@ img{
 }
 .project-item {
 } */
+
+.icone-text{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .project-link {
   color: var(--main-title-color);
   background: #FFFFFF;
@@ -377,4 +383,5 @@ img{
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
+  margin-top: 4px;
 }
