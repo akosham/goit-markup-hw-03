@@ -76,7 +76,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   margin: 0 auto;
 }
 
@@ -105,7 +105,7 @@ img {
 
 .header-list .header-item {
   /* background-color: gold; */
-  border: 2px solid tomato;
+  /* border: 2px solid tomato; */
 }
 
 /* .header-list .header-item + .header-item {
